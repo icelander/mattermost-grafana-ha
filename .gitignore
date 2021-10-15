@@ -1,0 +1,5 @@
+.vagrant
+.DS_Store
+e20license.txt
+MM_LICENSE.env
+mattermost_archives/

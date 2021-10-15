@@ -1,0 +1,39 @@
+{
+    "ServiceSettings": {
+        "SiteURL": "http://mattermost.planex.com/",
+        "LicenseFileLocation": "/opt/mattermost/config/license.txt",
+        "AllowedUntrustedInternalConnections": "127.0.0.1, localhost, 192.168.1.*, 192.168.0.*",
+        "EnableLocalMode": true
+    },
+    "TeamSettings": {
+        "SiteName": "Mattermost"
+    },
+    "SqlSettings": {
+        "DriverName": "postgres",
+        "DataSource": "postgres://mmuser:really_secure_password@127.0.0.1:5432/mattermost?sslmode=disable&connect_timeout=10"
+    },
+    "PasswordSettings": {
+        "MinimumLength": 5,
+        "Lowercase": false,
+        "Number": false,
+        "Uppercase": false,
+        "Symbol": false
+    },
+    "LogSettings": {
+        "EnableConsole": true,
+        "ConsoleLevel": "DEBUG",
+        "ConsoleJson": false,
+        "EnableFile": true,
+        "FileLevel": "DEBUG",
+        "FileJson": false
+    },
+    "PluginSettings": {
+        "Enable": true,
+        "EnableUploads": true
+    },
+    "MetricsSettings": {
+        "Enable": true,
+        "BlockProfileRate": 0,
+        "ListenAddress": ":8067"
+    }
+}
